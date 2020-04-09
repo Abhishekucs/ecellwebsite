@@ -16,6 +16,16 @@ html,body{
         display: grid;
         grid-template-columns: 20px 1fr 1fr 1fr 20px;
         grid-template-rows: 20px 80px 1fr 1fr 20px;
+        background-image: url(../img/SVG/left.svg), linear-gradient(to top right, rgb(8, 8, 8), rgb(46, 43, 43));
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-color: rgb(26, 24, 24);
+        .svg-images{
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
         .header{
             grid-column-start: 2;
             grid-column-end: 5;
@@ -28,24 +38,25 @@ html,body{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                background-color: #db4437;
+                // background-color: #db4437;
                 padding: 10px;
                 border-radius: 5px;
                 .name{
                     color: white;
                     margin-right: 9px;
+                    border-bottom: 1px white solid;
                     h6{
-                        font-weight: 550;
+                        font-weight: 500;
                     }
                 }
-                .bar{
-                    div{
-                        height: 2px;
-                        width: 13px;
-                        background-color: white;
-                        margin-bottom: 2px;
-                    }
-                }
+                // .bar{
+                //     div{
+                //         height: 2px;
+                //         width: 13px;
+                //         background-color: white;
+                //         margin-bottom: 2px;
+                //     }
+                // }
                 }
             }
             .logo{
@@ -55,28 +66,12 @@ html,body{
                 }
             }
         }
-        .content_1{
-            grid-column-start: 3;
-            grid-column-end: 5;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            align-self: center;
-            display: grid;
-            justify-items: end;
-            margin-bottom: 70px;
-            h6{
-                color: #db4437;
-                font-size: 2.5rem;
-                font-family: 'Acme', sans-serif;
-                font-weight: 600;
-            }
-        }
         .content{
             grid-column-start: 1;
             grid-column-end: 6;
             grid-row-start: 4;
             grid-row-end: 6;
-            color: black;
+            color: white;
             padding: 20px;
             h6{
                 margin-bottom: 7px;
@@ -87,12 +82,13 @@ html,body{
                 font-weight: 800;
                 font-size: 40px;
                 line-height: 42px;
-                margin-bottom: 9px;
+                margin-bottom: 10px;
             }
             button{
                 border: none;
                 border-radius: 5px;
-                background-color: red;
+                background: none;
+                border: 1px white solid;
                 color: white;
                 font-weight: 800;
                 padding: 10px 30px;
