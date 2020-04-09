@@ -167,7 +167,7 @@ html, body {
           flex-direction: column;
 }
 
-.container .social-media .social img {
+.container .social-media .social a img {
   margin-bottom: 1.3rem;
   width: 1.3rem;
 }
