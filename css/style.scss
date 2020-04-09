@@ -46,6 +46,7 @@ html,body{
                     margin-right: 9px;
                     border-bottom: 1px white solid;
                     h6{
+                        font-size: 0.9rem;
                         font-weight: 500;
                     }
                 }
@@ -67,22 +68,26 @@ html,body{
             }
         }
         .content{
-            grid-column-start: 1;
-            grid-column-end: 6;
-            grid-row-start: 4;
-            grid-row-end: 6;
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            align-self: center;
+            margin-bottom: 5rem;
             color: white;
             padding: 20px;
             h6{
-                margin-bottom: 7px;
-                font-weight: 500;
-                font-size: 0.9rem;
+                margin-bottom: 0.6rem;
+                font-weight: 600;
+                font-size: 0.7rem;
+                margin-left: 2rem;
+                letter-spacing: 0.2rem;
             }
             h1{
                 font-weight: 800;
                 font-size: 40px;
                 line-height: 42px;
-                margin-bottom: 10px;
+                margin-bottom: 1.2rem;
             }
             button{
                 border: none;
@@ -92,6 +97,20 @@ html,body{
                 color: white;
                 font-weight: 800;
                 padding: 10px 30px;
+                margin-left: 6rem;
+            }
+        }
+        .social-media{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            img{
+                margin-bottom: 1.5rem;
+                width: 1.3rem;
             }
         }
     }
