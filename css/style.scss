@@ -38,7 +38,6 @@ html,body{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                // background-color: #db4437;
                 padding: 10px;
                 border-radius: 5px;
                 .name{
@@ -72,7 +71,7 @@ html,body{
             grid-column-end: 5;
             grid-row-start: 3;
             grid-row-end: 5;
-            align-self: center;
+            place-self: center;
             margin-bottom: 5rem;
             color: white;
             padding: 20px;
@@ -80,16 +79,18 @@ html,body{
                 margin-bottom: 0.6rem;
                 font-weight: 600;
                 font-size: 0.7rem;
-                margin-left: 2rem;
+                text-align: center;
                 letter-spacing: 0.2rem;
             }
-            h1{
+            p{
                 font-weight: 800;
-                font-size: 40px;
-                line-height: 42px;
+                font-size: 2.5rem;
                 margin-bottom: 1.2rem;
+                text-align: center;
             }
             button{
+                display: block;
+                margin: auto;
                 border: none;
                 border-radius: 5px;
                 background: none;
@@ -97,7 +98,7 @@ html,body{
                 color: white;
                 font-weight: 800;
                 padding: 10px 30px;
-                margin-left: 6rem;
+                
             }
         }
         .social-media{
@@ -108,9 +109,20 @@ html,body{
             align-self: center;
             display: flex;
             flex-direction: column;
-            img{
-                margin-bottom: 1.5rem;
-                width: 1.3rem;
+            .line{
+                height: 3rem;
+                width: 1px;
+                background-color: white;
+                margin-bottom: 1rem;
+                margin-left: 10px;
+            }
+            .social{
+                display: flex;
+                flex-direction: column;
+                img{
+                    margin-bottom: 1.3rem;
+                    width: 1.3rem;
+                }
             }
         }
     }

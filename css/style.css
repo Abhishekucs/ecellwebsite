@@ -98,9 +98,7 @@ html, body {
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-row-end: 5;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  place-self: center;
   margin-bottom: 5rem;
   color: white;
   padding: 20px;
@@ -110,18 +108,20 @@ html, body {
   margin-bottom: 0.6rem;
   font-weight: 600;
   font-size: 0.7rem;
-  margin-left: 2rem;
+  text-align: center;
   letter-spacing: 0.2rem;
 }
 
-.container .content h1 {
+.container .content p {
   font-weight: 800;
-  font-size: 40px;
-  line-height: 42px;
+  font-size: 2.5rem;
   margin-bottom: 1.2rem;
+  text-align: center;
 }
 
 .container .content button {
+  display: block;
+  margin: auto;
   border: none;
   border-radius: 5px;
   background: none;
@@ -129,7 +129,6 @@ html, body {
   color: white;
   font-weight: 800;
   padding: 10px 30px;
-  margin-left: 6rem;
 }
 
 .container .social-media {
@@ -150,8 +149,26 @@ html, body {
           flex-direction: column;
 }
 
-.container .social-media img {
-  margin-bottom: 1.5rem;
+.container .social-media .line {
+  height: 3rem;
+  width: 1px;
+  background-color: white;
+  margin-bottom: 1rem;
+  margin-left: 10px;
+}
+
+.container .social-media .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .social-media .social img {
+  margin-bottom: 1.3rem;
   width: 1.3rem;
 }
 /*# sourceMappingURL=style.css.map */
