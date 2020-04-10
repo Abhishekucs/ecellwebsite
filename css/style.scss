@@ -15,17 +15,8 @@ html,body{
         height: 100vh;
         display: grid;
         grid-template-columns: 20px 1fr 1fr 1fr 20px;
-        grid-template-rows: 20px 80px 1fr 1fr 20px;
-        background-image: url(../img/SVG/left.svg), linear-gradient(to top right, rgb(8, 8, 8), rgb(46, 43, 43));
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-color: rgb(26, 24, 24);
-        .svg-images{
-            grid-column-start: 1;
-            grid-column-end: 6;
-            grid-row-start: 4;
-            grid-row-end: 6;
-        }
+        grid-template-rows: 20px 80px 1fr 1fr 50px;
+        background-image: linear-gradient(#0B2545, #13315C, #134074);
         .header{
             grid-column-start: 2;
             grid-column-end: 5;
@@ -43,7 +34,7 @@ html,body{
                 .name{
                     color: white;
                     margin-right: 9px;
-                    border-bottom: 1px white solid;
+                    border-bottom: 1px rgb(255, 255, 255) solid;
                     h6{
                         font-size: 0.9rem;
                         font-weight: 500;
@@ -73,7 +64,7 @@ html,body{
             grid-row-end: 5;
             place-self: center;
             margin-bottom: 5rem;
-            color: white;
+            color: rgb(255, 255, 255);
             padding: 20px;
             h6{
                 margin-bottom: 0.6rem;
@@ -83,49 +74,82 @@ html,body{
                 letter-spacing: 0.2rem;
             }
             p{
-                font-weight: 800;
-                font-size: 2.5rem;
+                font-family: 'Alfa Slab One', cursive;
+                font-weight: 500;
+                font-size: 2.9rem;
                 margin-bottom: 1.2rem;
                 text-align: center;
+                line-height: 2.7rem;
             }
             button{
                 display: block;
                 margin: auto;
                 border: none;
-                border-radius: 5px;
                 background: none;
-                border: 1px white solid;
-                color: white;
+                border: 1px rgb(255, 255, 255) solid;
+                color: rgb(255, 255, 255);
                 font-weight: 800;
                 padding: 10px 30px;
                 
             }
         }
-        .social-media{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 4;
-            grid-row-end: 5;
-            align-self: center;
+        .content_1{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 5;
+            grid-row-end: 6;
             display: flex;
-            flex-direction: column;
-            .line{
-                height: 3rem;
-                width: 1px;
-                background-color: white;
-                margin-bottom: 1rem;
-                margin-left: 10px;
+            justify-self: center;
+            color: white;
+            animation: example 3s ease-in-out 1s infinite alternate;
+            height: 1rem;
+            .arrow{
+                i{
+                    margin-right: 10px;
+                }
             }
-            .social{
-                display: flex;
-                flex-direction: column;
-                a{
-                    img{
-                        margin-bottom: 1.3rem;
-                        width: 1.3rem;
-                    }
+            .info{
+                h6{
+                    font-weight: 500;
+                    font-size: 0.9rem;
                 }
             }
         }
-    }
-
+        @keyframes example {
+            form{opacity: 1}
+            to{opacity: 0}
+        }
+        // .social-media{
+        //     grid-column-start: 2;
+        //     grid-column-end: 3;
+        //     grid-row-start: 4;
+        //     grid-row-end: 5;
+        //     align-self: center;
+        //     display: flex;
+        //     flex-direction: column;
+        //     .line{
+        //         height: 3rem;
+        //         width: 1px;
+        //         background-color: white;
+        //         margin-bottom: 1rem;
+        //         margin-left: 10px;
+        //     }
+        //     .social{
+        //         width: 1.4rem;
+        //         ul{
+        //             list-style-type: none;
+        //             margin: 0;
+        //             padding: 0;
+        //             li a{
+        //                 display: block;
+        //                 text-decoration: none;
+        //                 margin-bottom: 1rem;
+        //                 .fab{
+        //                     color: white;
+        //                     font-size: 1.4rem;
+        //                 }                        
+        //             }
+        //         }
+        //     }
+        // }
+}
