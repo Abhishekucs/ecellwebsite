@@ -35,8 +35,8 @@ html, body {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 6;
-  z-index: 1;
   pointer-events: none;
+  z-index: 1;
 }
 
 .container .one svg .morph {
