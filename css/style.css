@@ -28,6 +28,21 @@ html, body {
   background-image: linear-gradient(#0B2545, #13315C, #134074);
 }
 
+.container .one svg {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 6;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 6;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.container .one svg .morph {
+  fill: #CC0066;
+}
+
 .container .one .header {
   -ms-grid-column: 2;
       grid-column-start: 2;
@@ -66,9 +81,11 @@ html, body {
   border-bottom: 1px white solid;
 }
 
-.container .one .header .hamburger .name h6 {
-  font-size: 0.9rem;
-  font-weight: 500;
+.container .one .header .hamburger .name #btn1 {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 .container .one .logo {
@@ -118,6 +135,7 @@ html, body {
   color: white;
   font-weight: 800;
   padding: 10px 30px;
+  cursor: pointer;
 }
 
 .container .content_1 {
