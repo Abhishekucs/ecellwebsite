@@ -88,6 +88,54 @@ html,body{
                         cursor: pointer;
                     }
                 }
+                .menu-items{
+                    grid-column-start: 2;
+                    grid-column-end: 5;
+                    grid-row-start: 3;
+                    grid-row-end: 5;
+                    text-align: center;
+                    .items{
+                        margin: 2rem auto;
+                        a{
+                            text-decoration: none;
+                            cursor: pointer;
+                            display: block;
+                            h1{
+                                font-size: 2rem;
+                                color: white;
+                                letter-spacing: 0.3rem;
+                                font-weight: 800;
+                            }
+                        }
+                    }
+                }
+                .social-media{
+                    grid-column-start: 2;
+                    grid-column-end: 5;
+                    grid-row-start: 4;
+                    grid-row-end: 5;
+                    align-self: end;
+                    justify-self: end;
+                    margin-right: 9px;
+                    cursor: pointer;
+                    .social{
+                        width: 1.4rem;
+                        ul{
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 0;
+                            li a{
+                                display: block;
+                                text-decoration: none;
+                                margin-bottom: 1rem;
+                                .fab{
+                                    color: white;
+                                    font-size: 1.4rem;
+                                }                        
+                            }
+                        }
+                    }
+                }
             }
         }
         .pointer{
@@ -156,37 +204,4 @@ html,body{
             form{opacity: 1}
             to{opacity: 0}
         }
-        // .social-media{
-        //     grid-column-start: 2;
-        //     grid-column-end: 3;
-        //     grid-row-start: 4;
-        //     grid-row-end: 5;
-        //     align-self: center;
-        //     display: flex;
-        //     flex-direction: column;
-        //     .line{
-        //         height: 3rem;
-        //         width: 1px;
-        //         background-color: white;
-        //         margin-bottom: 1rem;
-        //         margin-left: 10px;
-        //     }
-        //     .social{
-        //         width: 1.4rem;
-        //         ul{
-        //             list-style-type: none;
-        //             margin: 0;
-        //             padding: 0;
-        //             li a{
-        //                 display: block;
-        //                 text-decoration: none;
-        //                 margin-bottom: 1rem;
-        //                 .fab{
-        //                     color: white;
-        //                     font-size: 1.4rem;
-        //                 }                        
-        //             }
-        //         }
-        //     }
-        // }
 }

@@ -5,6 +5,7 @@ const btn2 = document.getElementById("btn2")
 const btn2_animate = document.getElementsByClassName("btn2")
 const slider2 = document.querySelector(".slider_2")
 const slider = document.querySelector(".slider")
+const menu = document.querySelectorAll('.items')
 
 const t1 = gsap.timeline();
 
@@ -12,6 +13,7 @@ btn1.addEventListener("click", (e) => {
     t1.fromTo(slider,{opacity: 0}, {opacity: 1})
     .fromTo(slider2,{x: "100%"},{duration: 1, x: "0", ease: "power4.in"})
     .fromTo(btn2_animate,{y: "30px"},{y: "0", ease: "power4.in"})
+    .fromTo(menu,{y: "30px",opacity: 0},{y: "0", opacity: 1, ease: "power4.in"})
     slider.classList.add("pointer");
 })
 

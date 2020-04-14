@@ -133,6 +133,70 @@ html, body {
   cursor: pointer;
 }
 
+.container .slider .slider_2 .menu-items {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+  text-align: center;
+}
+
+.container .slider .slider_2 .menu-items .items {
+  margin: 2rem auto;
+}
+
+.container .slider .slider_2 .menu-items .items a {
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+.container .slider .slider_2 .menu-items .items a h1 {
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 0.3rem;
+  font-weight: 800;
+}
+
+.container .slider .slider_2 .social-media {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 5;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 5;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 9px;
+  cursor: pointer;
+}
+
+.container .slider .slider_2 .social-media .social {
+  width: 1.4rem;
+}
+
+.container .slider .slider_2 .social-media .social ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container .slider .slider_2 .social-media .social ul li a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.container .slider .slider_2 .social-media .social ul li a .fab {
+  color: white;
+  font-size: 1.4rem;
+}
+
 .container .pointer {
   opacity: 1;
   pointer-events: visible;
